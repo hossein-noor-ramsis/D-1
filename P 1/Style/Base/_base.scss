@@ -35,7 +35,7 @@ body {
 /* end of flex */
 /* start of general */
 @font-face {
-    font-family: ;
+    font-family: vazir;
     src: url(../Font/name.ttf) format(ttf);
     src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot), url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff),
         url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
@@ -43,7 +43,7 @@ body {
 
 body {
     direction: ltr;
-    text-align: right;
+    text-align: left;
     font-family: $font-family-primary;
     font-size: 16px;
     padding: 0px;

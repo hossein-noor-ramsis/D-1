@@ -1,14 +1,84 @@
 /* start of function */
+@mixin btn-primary {
+    background-color: $color-primary;
+    color: $color-body;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
 
-/* end of function */ 
+@mixin btn-hover {
+    background-color: $color-primaty-light;
+    color: $color-primary;
+}
+
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* end of function */
 /* start of variable */
-
+$color-primary: #e2711d;
+$color-primaty-light: #ffb627;
+$color-grey-1: #102a42;
+$color-grey-5: #617d98;
+$color-gry-10: #f1f5f8;
+$color-body: #ffffff;
 /* end of variable */
 /* start of general */
 
 /* end of general */
 /* start of header */
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../../Source/Home/Image/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+header {
+    img {
+        max-width: 100px;
+    }
+
+    h1 {
+        
+        color: $color-primary;
+        padding: 1rem;
+    }
+
+    h2 {
+        color: $color-body;
+        padding: 1rem;
+    }
+    
+    div {
+        text-align: center;
+    }
+
+    button {
+        @include btn-primary;
+        font-size: 1.25rem;
+        outline: 0.125rem solid $color-primary;
+        outline-offset: 0.25rem;
+    }
+
+    button:hover {
+        @include btn-hover;
+        outline: 0.125rem solid $color-primaty-light;
+        outline-offset: 0.25rem;
+    }
+}
 /* end of header */
 /* start of main */
 

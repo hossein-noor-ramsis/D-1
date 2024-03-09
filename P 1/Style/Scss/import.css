@@ -25,15 +25,21 @@ body {
 /* start of general */
 @font-face {
   font-family: vazir;
-  src: url(../Font/vazir-font-v16.1.0/Vazir.ttf) format(ttf);
-  src: url(../Font/name.ttf) format(eot), url(../Font/name.woff) format(woff), url(../Font/name.woff2) format(woff2);
+  src: url(../Font/name.ttf) format(ttf);
+  src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot), url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff), url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
 }
 body {
   direction: ltr;
-  font-family: name;
+  text-align: left;
+  font-family: vazir;
   font-size: 16px;
   padding: 0px;
   margin: 0px;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* end of general */
@@ -68,12 +74,62 @@ body {
 /* start of footer */
 /* end of footer */
 /* start of function */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 /* end of function */
 /* start of variable */
 /* end of variable */
 /* start of general */
 /* end of general */
 /* start of header */
+header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Source/Home/Image/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header img {
+  max-width: 100px;
+}
+header h1 {
+  color: #e2711d;
+  padding: 1rem;
+}
+header h2 {
+  color: #ffffff;
+  padding: 1rem;
+}
+header div {
+  text-align: center;
+}
+header button {
+  background-color: #e2711d;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  outline: 0.125rem solid #e2711d;
+  outline-offset: 0.25rem;
+}
+header button:hover {
+  background-color: #ffb627;
+  color: #e2711d;
+  outline: 0.125rem solid #ffb627;
+  outline-offset: 0.25rem;
+}
+
 /* end of header */
 /* start of main */
 /* end of main */
