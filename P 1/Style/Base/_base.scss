@@ -1,0 +1,68 @@
+/* start of function */
+
+/* end of function */
+/* start of variable */
+$color-primary: #e2711d;
+$color-primaty-light: #ffb627;
+$color-grey-1: #102a42;
+$color-grey-5: #617d98;
+$color-gry-10: #f1f5f8;
+$color-body: #ffffff;
+
+$font-family-primary: vazir;
+/* end of variable */
+/* start of grid */
+body {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    max-width: 1441px;
+    min-width: 320px;
+}
+
+/* end of grid */
+/* start of flex */
+@media screen and (min-width: 1441px) {
+    html {
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        width: 1450px;
+    }
+}
+
+/* end of flex */
+/* start of general */
+@font-face {
+    font-family: ;
+    src: url(../Font/name.ttf) format(ttf);
+    src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot), url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff),
+        url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
+}
+
+body {
+    direction: ltr;
+    text-align: right;
+    font-family: $font-family-primary;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    background: $color-body;
+    // box-sizing: border-box;
+    // box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+}
+/* end of general */
+/* start of header */
+
+/* end of header */
+/* start of main */
+
+/* end of main */
+/* start of footer */
+
+/* end of footer */
