@@ -1,5 +1,17 @@
 /* start of function */
+@media screen and (min-width: 426px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /* end of function */ 
 /* start of variable */
 

@@ -8,10 +8,14 @@
 
 /* end of general */
 /* start of header */
-
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* end of header */
 /* start of main */
-
 /* end of main */
 /* start of footer */
 
