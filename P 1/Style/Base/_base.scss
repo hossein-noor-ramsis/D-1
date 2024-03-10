@@ -2,13 +2,6 @@
 
 /* end of function */
 /* start of variable */
-$color-primary: #e2711d;
-$color-primaty-light: #ffb627;
-$color-grey-1: #102a42;
-$color-grey-5: #617d98;
-$color-gry-10: #f1f5f8;
-$color-body: #ffffff;
-
 $font-family-primary: vazir;
 /* end of variable */
 /* start of grid */
@@ -37,7 +30,8 @@ body {
 @font-face {
     font-family: vazir;
     src: url(../Font/name.ttf) format(ttf);
-    src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot), url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff),
+    src: url(../Font/vazir-font-v16.1.0/Vazir.eot) format(eot),
+        url(../Font/vazir-font-v16.1.0/Vazir.woff) format(woff),
         url(../Font/vazir-font-v16.1.0/Vazir.woff2) format(woff2);
 }
 
@@ -48,7 +42,7 @@ body {
     font-size: 16px;
     padding: 0px;
     margin: 0px;
-    background: $color-body;
+    background-color: #ffffff;
     // box-sizing: border-box;
     // box-sizing: content-box;
 }

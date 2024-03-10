@@ -12,7 +12,7 @@
     color: $color-primary;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 1.75rem;
     }
@@ -35,24 +35,23 @@ $color-body: #ffffff;
 /* end of general */
 /* start of header */
 header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../../Source/Home/Image/header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .header {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../Source/Home/Image/header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-header {
-    img {
-        max-width: 100px;
+    .nav-content {
+        text-align: center;
     }
 
     h1 {
-        
         color: $color-primary;
         padding: 1rem;
     }
@@ -61,10 +60,7 @@ header {
         color: $color-body;
         padding: 1rem;
     }
-    
-    div {
-        text-align: center;
-    }
+
 
     button {
         @include btn-primary;
@@ -77,6 +73,16 @@ header {
         @include btn-hover;
         outline: 0.125rem solid $color-primaty-light;
         outline-offset: 0.25rem;
+    }
+
+    .divider {
+        height: 0.5rem;
+        background: linear-gradient(
+            to left,
+            $color-primary,
+            $color-primaty-light,
+            $color-primary
+        );
     }
 }
 /* end of header */

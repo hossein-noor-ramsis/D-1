@@ -35,7 +35,7 @@ body {
   font-size: 16px;
   padding: 0px;
   margin: 0px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 a {
@@ -88,7 +88,7 @@ a {
 /* start of general */
 /* end of general */
 /* start of header */
-header {
+header .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Source/Home/Image/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,9 +98,8 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
-header img {
-  max-width: 100px;
+header .nav-content {
+  text-align: center;
 }
 header h1 {
   color: #e2711d;
@@ -109,9 +108,6 @@ header h1 {
 header h2 {
   color: #ffffff;
   padding: 1rem;
-}
-header div {
-  text-align: center;
 }
 header button {
   background-color: #e2711d;
@@ -128,6 +124,10 @@ header button:hover {
   color: #e2711d;
   outline: 0.125rem solid #ffb627;
   outline-offset: 0.25rem;
+}
+header .divider {
+  height: 0.5rem;
+  background: linear-gradient(to left, #e2711d, #ffb627, #e2711d);
 }
 
 /* end of header */
