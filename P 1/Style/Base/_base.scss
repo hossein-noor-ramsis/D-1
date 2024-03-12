@@ -232,10 +232,17 @@ header .navbar {
     }
 
     .list {
+        @include transition();
         animation: menu 2s ease infinite;
         font-size: 3rem;
         color: $color-primary;
         background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .list:hover {
+        @include transition();
+        color: $color-primary-light;
     }
 
     nav {

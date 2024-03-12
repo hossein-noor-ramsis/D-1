@@ -183,10 +183,16 @@ header .navbar .bi-x-lg:hover {
   color: #f32727;
 }
 header .navbar .list {
+  transition: 0.5s;
   animation: menu 2s ease infinite;
   font-size: 3rem;
   color: #e2711d;
   background-color: transparent;
+  cursor: pointer;
+}
+header .navbar .list:hover {
+  transition: 0.5s;
+  color: #ffb627;
 }
 header .navbar nav {
   transition: 0.5s;
