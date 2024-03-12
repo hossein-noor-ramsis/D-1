@@ -1,15 +1,38 @@
 /* start of function */
-@media screen and (min-width: 426px) {
-    .features {
+@media screen and (min-width: 430px) {
+    main .items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 768px) {
-    .features {
+    main .servises {
+        .pack {            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    main .about {
+        & {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    main .servises {
+        .pack {            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 /* end of function */ 
@@ -23,7 +46,12 @@
 
 /* end of header */
 /* start of main */
-
+main .servises {
+    .servise{            
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
 /* end of main */
 /* start of footer */
 

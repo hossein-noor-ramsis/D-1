@@ -1,14 +1,18 @@
 /* start of function */
 @mixin btn-primary {
+    @include transition;
     background-color: $color-primary;
     color: $color-body;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.5rem;
+    transition: 0.5s;
 }
 
 @mixin btn-hover {
+    @include transition;
     background-color: $color-primaty-light;
+    transition: 0.5s;
 }
 
 @mixin transition {
@@ -16,12 +20,58 @@
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.75rem;
+    header .slider {
+        header .slider h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    } 
+
+    main .about {
+        & {
+            margin: 3rem 1rem;
+        }
     }
 
-    h2 {
-        font-size: 1.5rem;
+    main .products {
+        & { 
+            padding: 1rem 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main .about {
+        & {
+            margin: 1rem;
+        }
+    
+    }
+
+    main .products {
+        & {
+            padding: 0rem 2rem;
+        }
+
+        .product {
+            padding: 1rem;
+        }
+    
+        .info {
+            padding: 2rem 0rem;
+            min-width: 256px;
+            min-height: 512px;
+        }
+    
+        img {
+            min-width: 170px;
+            min-height: 340px;
+            overflow: hidden;
+            object-fit: cover;
+        }
     }
 }
 /* end of function */
@@ -34,12 +84,29 @@ $color-grey-10: #f1f5f8;
 $color-body: #ffffff;
 /* end of variable */
 /* start of general */
+body {
+    p {
+        color: $color-grey-5;
+    }
 
+    h5 {
+        color: $color-primary;
+    }
+
+    button {
+        @include btn-primary;
+        margin: auto;
+    }
+
+    button:hover {
+        @include btn-hover;
+    }
+}
 /* end of general */
 /* start of header */
-header {
+header .slider {
     .content {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url(../../Source/Home/Image/header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -59,15 +126,13 @@ header {
     }
 
     button {
-        @include btn-primary;
-        font-size: 1.25rem;
+        font-size: 1rem;
         outline: 0.125rem solid $color-primary;
         outline-offset: 0.25rem;
+        margin: 1rem;
     }
 
     button:hover {
-        @include transition;
-        @include btn-hover;
         outline: 0.125rem solid $color-primaty-light;
         outline-offset: 0.25rem;
     }
@@ -79,24 +144,27 @@ header {
 }
 /* end of header */
 /* start of main */
-body {
-    .features {
+main .items {
+    & { 
+        padding: 3rem;
         background-color: $color-grey-10;
-        height: 280px;
     }
 
-    .feature {
+    .item {
+        @include transition;
         text-align: center;
+        height: 280px;
         padding: 0.5rem;
     }
     
-    .feature:hover {
+    .item:hover {
         @include transition;
         background-color: $color-body;
         box-shadow: 0px 2px 0px $color-primary;
     }
 
-    .feature .bi {
+    .item .bi {
+        @include transition;
         display: block;
         font-size: 2rem;
         padding: 0.5rem;
@@ -105,18 +173,113 @@ body {
         color: $color-primary;
     }
 
-    .feature:hover .bi {
+    .item:hover .bi {
         @include transition;
         transform: translateY(-5px);
     }
 
-    .feature h4 {
+    .item h4 {
         padding: 0.5rem;
     }
 
-    .feature p {
+    .item p {
         padding: 0.5rem;
-        color: $color-grey-5;
+    }
+}
+
+main .about {
+    .image {
+        overflow: hidden;
+        margin: 2rem;
+        border: 0.25rem solid $color-primary;
+        border-radius: 0.5rem;
+        background-color: $color-primary;
+    }
+    
+    img {
+        @include transition;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    img:hover {
+        @include transition;
+        border-radius: 0.5rem;
+        scale: 1.2;
+        opacity: 0.5;
+    }
+
+    .content {
+        margin: 2rem;
+    }
+}
+
+main .products {
+    & {
+        background-color: $color-grey-10;
+    }
+
+    .info {
+        padding: 2rem 0rem;
+    }
+
+    .image {
+        padding: 2rem 0rem;
+    }
+    
+    img {
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+
+    button {
+        display: block;
+    }
+}
+
+main .servises {
+    & {
+        padding: 3rem 2rem 3rem 2rem;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+
+    .servise {
+        @include transition;
+        position: relative;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        background-color: $color-grey-10;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+
+    .servise:hover {
+        @include transition;
+        transform: scale(104%);
+        box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    h6 {
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
+
+    .bi {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.75rem;
+        color: $color-primary;
+        background-color: $color-primaty-light;
+        padding: 0.5rem  0.7rem 0.1rem 0.7rem;
+        border: 0.25rem solid $color-grey-10;
+        border-radius: 50%;
     }
 }
 /* end of main */
