@@ -22,8 +22,11 @@
 
 /* end of general */
 /* start of header */
-header .slider {
-    .content {
+
+/* end of header */
+/* start of main */
+main .servises {
+    div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,29 +40,7 @@ main .contact {
         flex-direction: column;
     }
 }
-/* end of header */
-/* start of main */
-main .servises {
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
 /* end of main */
 /* start of footer */
-footer .center {
-    & {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .social-media, .copy-right {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 /* end of footer */
