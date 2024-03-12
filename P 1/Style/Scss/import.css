@@ -71,6 +71,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media screen and (min-width: 1124px) {
   main .servises .pack {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,6 +100,10 @@ main .servises .servise {
     display: flex;
     flex-direction: row-reverse;
   }
+  main .contact {
+    display: flex;
+    flex-direction: row;
+  }
 }
 /* end of function */
 /* start of variable */
@@ -112,6 +118,11 @@ header .slider .content {
   align-items: center;
 }
 
+main .contact .massage {
+  display: flex;
+  flex-direction: column;
+}
+
 /* end of header */
 /* start of main */
 main .servises div {
@@ -123,10 +134,30 @@ main .servises div {
 
 /* end of main */
 /* start of footer */
+footer .center {
+  display: flex;
+  flex-direction: column;
+}
+footer .center .social-media, footer .center .copy-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* end of footer */
 /* start of function */
 @media screen and (max-width: 768px) {
-  header .slider header .slider h1 {
+  header .navbar nav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: #f1f5f8;
+  }
+  header .slider h1 {
     font-size: 1.5rem;
   }
   header .slider h2 {
@@ -140,6 +171,16 @@ main .servises div {
   }
 }
 @media screen and (min-width: 768px) {
+  header .navbar nav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 30%;
+    max-width: 30rem;
+    z-index: 10;
+    background-color: #f1f5f8;
+  }
   main .about {
     margin: 1rem;
   }
@@ -190,6 +231,54 @@ body button:hover {
 
 /* end of general */
 /* start of header */
+header {
+  position: relative;
+}
+
+header .navbar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+header .navbar .bi-x-lg {
+  transition: 0.5s;
+  font-size: 1.5rem;
+  color: #ec8b8b;
+  cursor: pointer;
+}
+header .navbar .bi-x-lg:hover {
+  transition: 0.5s;
+  color: #f32727;
+}
+header .navbar button {
+  font-size: 3rem;
+  color: #e2711d;
+  background-color: transparent;
+}
+header .navbar nav {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+  transform: translateX(-200%);
+}
+header .navbar .show {
+  transform: translateX(0%);
+}
+header .navbar a {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+}
+header .navbar a:hover {
+  background-color: #ffb627;
+  border-left: 0.25rem solid #e2711d;
+}
+header .navbar span {
+  color: #617d98;
+}
+header .navbar .close {
+  padding: 1.5rem;
+  text-align: end;
+}
+
 header .slider .content {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Source/Home/Image/header.jpg);
   background-size: cover;
@@ -319,8 +408,13 @@ main .servises .servise:hover {
   box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 main .servises h6 {
-  margin-top: 1rem;
   padding: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+main .servises p {
+  padding: 0.5rem;
+  margin-bottom: 0rem;
 }
 main .servises .bi {
   position: absolute;
@@ -334,7 +428,64 @@ main .servises .bi {
   border: 0.25rem solid #f1f5f8;
   border-radius: 50%;
 }
+main .servises button {
+  margin: 0.5rem;
+}
+
+main .contact {
+  padding: 3rem;
+  background-color: #f1f5f8;
+}
+main .contact .info {
+  padding: 1rem;
+}
+main .contact .massage {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+main .contact h4 {
+  text-align: center;
+  padding-top: 0.5rem;
+  color: #617d98;
+}
+main .contact input {
+  padding: 0.5rem;
+  border: 1px solid #f1f5f8;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  background-color: #f1f5f8;
+}
+main .contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #f1f5f8;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  background-color: #f1f5f8;
+  resize: none;
+}
+main .contact button {
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+}
 
 /* end of main */
 /* start of footer */
+footer .center {
+  background-color: #102a42;
+  padding: 2rem;
+}
+footer .center a {
+  color: #ffffff;
+}
+footer .center .bi {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+footer .center h6 {
+  color: #ffffff;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+  margin-bottom: 0px;
+}
+
 /* end of footer *//*# sourceMappingURL=import.css.map */

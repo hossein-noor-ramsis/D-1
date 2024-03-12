@@ -6,6 +6,13 @@
             flex-direction: row-reverse;
         }
     }
+
+    main .contact {
+        & {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 /* end of function */ 
 /* start of variable */
@@ -23,6 +30,13 @@ header .slider {
         align-items: center;
     }
 }
+
+main .contact {
+    .massage {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* end of header */
 /* start of main */
 main .servises {
@@ -35,5 +49,17 @@ main .servises {
 }
 /* end of main */
 /* start of footer */
-
+footer .center {
+    & {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .social-media, .copy-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* end of footer */
