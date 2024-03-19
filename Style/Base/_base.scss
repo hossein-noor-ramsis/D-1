@@ -221,6 +221,10 @@ header .navbar {
         padding: 0.5rem;
         font-size: 1.5rem;
     }
+
+    .btn:hover {
+        transform: scale(120%);
+    }
     
     .dropdown-menu {
         height: 100vh;
@@ -237,6 +241,7 @@ header .navbar {
     }
 
     .nav-link:hover {
+        transition: 0.25s;
         border-left: 0.25rem solid $color-primary;
     }
 }
