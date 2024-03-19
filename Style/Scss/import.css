@@ -185,9 +185,13 @@ header .navbar .dropdown-menu {
   left: 0rem;
   border-radius: 0rem;
   padding: 1rem 2rem;
+  width: 15rem;
 }
 header .navbar .nav-link {
   padding: 0.5rem;
+}
+header .navbar .nav-link:hover {
+  border-left: 0.25rem solid #e2711d;
 }
 
 /* header .navbar {

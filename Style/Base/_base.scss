@@ -229,10 +229,15 @@ header .navbar {
         left: 0rem;
         border-radius: 0rem;
         padding: 1rem 2rem;
+        width: 15rem;
     }
     
     .nav-link {
         padding: 0.5rem;
+    }
+
+    .nav-link:hover {
+        border-left: 0.25rem solid $color-primary;
     }
 }
 
