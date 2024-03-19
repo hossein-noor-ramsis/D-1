@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    header .navbar {
+/*     header .navbar {
         nav {
             position: fixed;
             top: 0rem;
@@ -30,7 +30,7 @@
             z-index: 10;
             background-color: #f1f5f8;
         }
-    }
+    } */
 
     header .slider {
         h1 {
@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    header .navbar {
+/*     header .navbar {
         nav {
             position: fixed;
             top: 0rem;
@@ -55,7 +55,7 @@
             z-index: 10;
             background-color: #f1f5f8;
         }
-    }
+    } */
 }
 
 @keyframes menu {
@@ -207,11 +207,36 @@ a {
 }
 /* end of general */
 /* start of header */
-header {
-    position: relative;
+header .navbar {
+    & {
+        position: fixed;
+        display: inline;
+        top: 1rem;
+        left: 1rem;
+        z-index: 10;
+    }
+    
+    .btn {
+        transition: 0.5s;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .dropdown-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        border-radius: 0rem;
+        padding: 1rem 2rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem;
+    }
 }
 
-header .navbar {
+/* header .navbar {
     & {
         position: absolute;
         top: 2rem;
@@ -238,6 +263,7 @@ header .navbar {
         color: $color-primary;
         background-color: transparent;
         cursor: pointer;
+        z-index: 10;
     }
     
     .list:hover {
@@ -275,7 +301,7 @@ header .navbar {
         padding: 1.5rem;
         text-align: end;
     }
-}
+} */
 
 header .slider {
     .content {

@@ -1,14 +1,16 @@
 /* start of function */
 @media screen and (max-width: 768px) {
-  header .navbar nav {
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    background-color: #f1f5f8;
-  }
+  /*     header .navbar {
+          nav {
+              position: fixed;
+              top: 0rem;
+              left: 0rem;
+              height: 100%;
+              width: 100%;
+              z-index: 10;
+              background-color: #f1f5f8;
+          }
+      } */
   header .slider h1 {
     font-size: 1.5rem;
   }
@@ -17,16 +19,18 @@
   }
 }
 @media screen and (min-width: 768px) {
-  header .navbar nav {
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    height: 100%;
-    width: 30%;
-    max-width: 30rem;
-    z-index: 10;
-    background-color: #f1f5f8;
-  }
+  /*     header .navbar {
+          nav {
+              position: fixed;
+              top: 0rem;
+              left: 0rem;
+              height: 100%;
+              width: 30%;
+              max-width: 30rem;
+              z-index: 10;
+              background-color: #f1f5f8;
+          }
+      } */
 }
 @keyframes menu {
   0% {
@@ -162,64 +166,96 @@ a {
 
 /* end of general */
 /* start of header */
-header {
-  position: relative;
-}
-
 header .navbar {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  padding: 0px;
+  position: fixed;
+  display: inline;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
 }
-header .navbar .bi-x-lg {
+header .navbar .btn {
   transition: 0.5s;
+  padding: 0.5rem;
   font-size: 1.5rem;
-  color: #ec8b8b;
-  cursor: pointer;
 }
-header .navbar .bi-x-lg:hover {
-  transition: 0.5s;
-  color: #f32727;
+header .navbar .dropdown-menu {
+  height: 100vh;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 0rem;
+  padding: 1rem 2rem;
 }
-header .navbar .list {
-  transition: 0.5s;
-  animation: menu 2s ease infinite;
-  font-size: 3rem;
-  color: #e2711d;
-  background-color: transparent;
-  cursor: pointer;
-}
-header .navbar .list:hover {
-  transition: 0.5s;
-  color: #ffb627;
-}
-header .navbar nav {
-  transition: 0.5s;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
-  transform: translateX(-200%);
-}
-header .navbar .show {
-  transition: 0.5s;
-  transform: translateX(0%);
-}
-header .navbar a {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.25rem;
-}
-header .navbar a:hover {
-  background-color: #ffb627;
-  border-left: 0.25rem solid #e2711d;
-}
-header .navbar span {
-  color: #617d98;
-}
-header .navbar .close {
-  padding: 1.5rem;
-  text-align: end;
+header .navbar .nav-link {
+  padding: 0.5rem;
 }
 
+/* header .navbar {
+    & {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        padding: 0px;
+    }
+
+    .bi-x-lg {
+        @include transition();
+        font-size: 1.5rem;
+        color: #ec8b8b;
+        cursor: pointer;
+    }
+
+    .bi-x-lg:hover {
+        @include transition();
+        color: #f32727;
+    }
+
+    .list {
+        @include transition();
+        animation: menu 2s ease infinite;
+        font-size: 3rem;
+        color: $color-primary;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .list:hover {
+        @include transition();
+        color: $color-primary-light;
+    }
+
+    nav {
+        @include transition();
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+        transform: translateX(-200%);
+    }
+
+    .show {
+        @include transition();
+        transform: translateX(0%);
+    }
+
+    a {
+        display: block;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    a:hover {
+        background-color: $color-primary-light;
+        border-left: 0.25rem solid $color-primary;
+    }
+
+    span {
+        color: $color-grey-5;
+    }
+
+    .close {
+        padding: 1.5rem;
+        text-align: end;
+    }
+} */
 header .slider .content {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Source/Home/Image/header.jpg);
   background-size: cover;
@@ -322,7 +358,7 @@ main .servises .servise {
 /* start of footer */
 /* end of footer */
 /* start of function */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   main .products {
     display: flex;
     flex-direction: row-reverse;
@@ -357,15 +393,17 @@ main .contact .massage {
 /* end of footer */
 /* start of function */
 @media screen and (max-width: 768px) {
-  header .navbar nav {
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    background-color: #f1f5f8;
-  }
+  /*     header .navbar {
+          nav {
+              position: fixed;
+              top: 0rem;
+              left: 0rem;
+              height: 100%;
+              width: 100%;
+              z-index: 10;
+              background-color: #f1f5f8;
+          }
+      } */
   header .slider h1 {
     font-size: 1.5rem;
   }
@@ -373,28 +411,30 @@ main .contact .massage {
     font-size: 1.25rem;
   }
   main .about {
-    margin: 3rem 1rem;
+    margin: 3rem 3rem;
   }
   main .products {
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
   }
 }
 @media screen and (min-width: 768px) {
-  header .navbar nav {
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    height: 100%;
-    width: 30%;
-    max-width: 30rem;
-    z-index: 10;
-    background-color: #f1f5f8;
-  }
+  /*     header .navbar {
+          nav {
+              position: fixed;
+              top: 0rem;
+              left: 0rem;
+              height: 100%;
+              width: 30%;
+              max-width: 30rem;
+              z-index: 10;
+              background-color: #f1f5f8;
+          }
+      } */
   main .about {
-    margin: 1rem;
+    margin: 1rem 3rem;
   }
   main .products {
-    padding: 0rem 2rem;
+    padding: 0rem 4rem;
   }
   main .products .product {
     padding: 1rem;
@@ -452,7 +492,7 @@ main .contact .massage {
 /* end of header */
 /* start of main */
 main .items {
-  padding: 3rem;
+  padding: 3rem 5rem;
   background-color: #f1f5f8;
 }
 main .items .item {
@@ -526,7 +566,7 @@ main .products button {
 }
 
 main .servises {
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 4rem 3rem 4rem;
   text-align: center;
 }
 main .servises img {
@@ -572,7 +612,7 @@ main .servises button {
 }
 
 main .contact {
-  padding: 3rem;
+  padding: 3rem 5rem;
   background-color: #f1f5f8;
 }
 main .contact .info {
