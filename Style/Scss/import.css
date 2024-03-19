@@ -313,13 +313,13 @@ footer .center h6 {
 
 /* end of footer */
 /* start of function */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 650px) {
   main .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   main .servises .pack {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -335,7 +335,7 @@ footer .center h6 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1224px) {
   main .servises .pack {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
