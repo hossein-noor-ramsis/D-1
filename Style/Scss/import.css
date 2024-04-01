@@ -285,7 +285,7 @@ header .slider h1 {
 header .slider h2 {
   animation: from-bottom 2s ease;
   color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 header .slider button {
   animation: from-bottom 2s linear;
