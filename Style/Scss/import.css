@@ -182,7 +182,7 @@ header .navbar .btn:hover {
   transform: scale(120%);
 }
 header .navbar .dropdown-menu.show {
-  height: 150vh;
+  height: 100vh;
   position: fixed;
   top: 0rem;
   left: 0rem;
@@ -271,11 +271,6 @@ header .slider .content {
   background-position: center;
   height: 100vh;
   text-align: center;
-}
-@media screen and (max-width: 470px) {
-  header .slider .content, header .slider .dropdown-menu.show {
-    height: 150vh;
-  }
 }
 header .slider h1 {
   animation: from-top 2s ease;

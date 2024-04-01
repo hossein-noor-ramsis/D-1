@@ -227,7 +227,7 @@ header .navbar {
     }
     
     .dropdown-menu.show {
-        height: 150vh;
+        height: 100vh;
         position: fixed;
         top: 0rem;
         left: 0rem;
@@ -324,11 +324,11 @@ header .slider {
         text-align: center;
     }
 
-    @media screen and (max-width: 470px) {
-        .content, .dropdown-menu.show {
-            height: 150vh;
-        }
-    }
+    // @media screen and (max-width: 470px) {
+    //     .content, .dropdown-menu.show {
+    //         height: 150vh;
+    //     }
+    // }
 
     h1 {
         animation: from-top 2s ease;
