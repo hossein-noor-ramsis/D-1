@@ -226,14 +226,14 @@ header .navbar {
         transform: scale(120%);
     }
     
-    .dropdown-menu {
-        height: 100vh;
+    .dropdown-menu.show {
+        height: 150vh;
         position: fixed;
         top: 0rem;
         left: 0rem;
         border-radius: 0rem;
-        padding: 1rem 2rem;
-        width: 15rem;
+        padding: 2rem 2rem;
+        width: 20rem;
     }
     
     .nav-link {
@@ -322,6 +322,12 @@ header .slider {
         background-position: center;
         height: 100vh;
         text-align: center;
+    }
+
+    @media screen and (max-width: 470px) {
+        .content, .dropdown-menu.show {
+            height: 150vh;
+        }
     }
 
     h1 {

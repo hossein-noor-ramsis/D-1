@@ -181,14 +181,14 @@ header .navbar .btn {
 header .navbar .btn:hover {
   transform: scale(120%);
 }
-header .navbar .dropdown-menu {
-  height: 100vh;
+header .navbar .dropdown-menu.show {
+  height: 150vh;
   position: fixed;
   top: 0rem;
   left: 0rem;
   border-radius: 0rem;
-  padding: 1rem 2rem;
-  width: 15rem;
+  padding: 2rem 2rem;
+  width: 20rem;
 }
 header .navbar .nav-link {
   padding: 0.5rem;
@@ -271,6 +271,11 @@ header .slider .content {
   background-position: center;
   height: 100vh;
   text-align: center;
+}
+@media screen and (max-width: 470px) {
+  header .slider .content, header .slider .dropdown-menu.show {
+    height: 150vh;
+  }
 }
 header .slider h1 {
   animation: from-top 2s ease;
