@@ -659,6 +659,9 @@ main .contact textarea {
 main .contact button {
   margin: 1.5rem 0.5rem 0rem 0.5rem;
 }
+main .contact a {
+  color: #617d98;
+}
 
 /* end of main */
 /* start of footer */
