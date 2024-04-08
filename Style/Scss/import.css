@@ -661,6 +661,10 @@ main .contact button {
 }
 main .contact a {
   color: #617d98;
+  text-decoration: underline;
+}
+main .contact a:hover, main .contact :active {
+  color: black;
 }
 
 /* end of main */

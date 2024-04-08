@@ -346,6 +346,11 @@ main .contact {
 
     a {
         color: $color-grey-5;
+        text-decoration: underline;
+    }
+
+    a:hover, :active {
+        color: black;
     }
 }
 /* end of main */
